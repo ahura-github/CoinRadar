@@ -9,9 +9,29 @@ import SwiftUI
 
 @main
 struct CoinRadarApp: App {
+    
+    //MARK: - Vars
+    @State private var showLunchView   = true
+    
+    
+    //MARK: - Scene
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack{
+                NavigationView{
+                    ContentView()
+                }
+                .navigationViewStyle(StackNavigationViewStyle())
+                // .environmentObject(viewModel)
+                
+                ZStack{
+                    if showLunchView{
+                        LunchView(showLunchView: $showLunchView)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .zIndex(2.0)
+            }
         }
     }
 }
