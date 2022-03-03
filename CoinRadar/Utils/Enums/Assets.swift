@@ -13,6 +13,12 @@ enum Assets{
         enum Icons: String{
             case logo = "logo"
         }
+        enum Tab: String{
+            case selectedStats       = "bitcoin"
+            case unselectedStats     = "bitcoinGray"
+            case selectedPortfolio   = "wallet"
+            case unselectedPortfolio = "walletGray"
+        }
     }
 }
 

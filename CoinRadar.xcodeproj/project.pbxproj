@@ -24,6 +24,12 @@
 		28F89EE727D1182700CE82B7 /* CustomCornerRadiusPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */; };
 		28F89EE927D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE827D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift */; };
 		28F89EEB27D11CF800CE82B7 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EEA27D11CF800CE82B7 /* Device.swift */; };
+		28F89EED27D1476600CE82B7 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EEC27D1476600CE82B7 /* Tabs.swift */; };
+		28F89EEF27D1485000CE82B7 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EEE27D1485000CE82B7 /* SettingButton.swift */; };
+		28F89EF127D1485C00CE82B7 /* PortfolioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EF027D1485C00CE82B7 /* PortfolioButton.swift */; };
+		28F89EF327D1486B00CE82B7 /* StatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EF227D1486B00CE82B7 /* StatButton.swift */; };
+		28F89EF627D1498500CE82B7 /* CompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EF527D1498500CE82B7 /* CompletionHandler.swift */; };
+		28F89EF927D14A3C00CE82B7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EF827D14A3C00CE82B7 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,12 @@
 		28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornerRadiusPath.swift; sourceTree = "<group>"; };
 		28F89EE827D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornerRadiusViewModifier.swift; sourceTree = "<group>"; };
 		28F89EEA27D11CF800CE82B7 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		28F89EEC27D1476600CE82B7 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		28F89EEE27D1485000CE82B7 /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
+		28F89EF027D1485C00CE82B7 /* PortfolioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioButton.swift; sourceTree = "<group>"; };
+		28F89EF227D1486B00CE82B7 /* StatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatButton.swift; sourceTree = "<group>"; };
+		28F89EF527D1498500CE82B7 /* CompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionHandler.swift; sourceTree = "<group>"; };
+		28F89EF827D14A3C00CE82B7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		28A8FDD527CE744C001F1100 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				28F89EF727D14A2600CE82B7 /* Protocols */,
+				28F89EF427D1497500CE82B7 /* Globals */,
 				28F89EE527D1180B00CE82B7 /* Shapes */,
 				28A8FDEC27CE9557001F1100 /* ViewModifiers */,
 				28A8FDE027CE877F001F1100 /* Structs */,
@@ -156,6 +170,7 @@
 				28A8FDE427CE87BB001F1100 /* AppStyle.swift */,
 				28A8FDE827CE93E0001F1100 /* Assets.swift */,
 				28F89EEA27D11CF800CE82B7 /* Device.swift */,
+				28F89EEC27D1476600CE82B7 /* Tabs.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -198,6 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				28F89EE327D1174100CE82B7 /* TabBarView.swift */,
+				28F89EEE27D1485000CE82B7 /* SettingButton.swift */,
+				28F89EF027D1485C00CE82B7 /* PortfolioButton.swift */,
+				28F89EF227D1486B00CE82B7 /* StatButton.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -208,6 +226,22 @@
 				28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		28F89EF427D1497500CE82B7 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				28F89EF527D1498500CE82B7 /* CompletionHandler.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		28F89EF727D14A2600CE82B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				28F89EF827D14A3C00CE82B7 /* CustomButton.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,16 +317,22 @@
 			files = (
 				28A8FDEE27CE9566001F1100 /* FrameViewModifier.swift in Sources */,
 				28A8FDEB27CE9507001F1100 /* View.swift in Sources */,
+				28F89EF127D1485C00CE82B7 /* PortfolioButton.swift in Sources */,
 				28F89EE927D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift in Sources */,
+				28F89EF927D14A3C00CE82B7 /* CustomButton.swift in Sources */,
 				28A8FDCA27CE7442001F1100 /* ContentView.swift in Sources */,
 				28A8FDE927CE93E0001F1100 /* Assets.swift in Sources */,
 				28F89EEB27D11CF800CE82B7 /* Device.swift in Sources */,
 				28A8FDE527CE87BB001F1100 /* AppStyle.swift in Sources */,
 				28A8FDF127CE9BB3001F1100 /* LunchViewModel.swift in Sources */,
+				28F89EEF27D1485000CE82B7 /* SettingButton.swift in Sources */,
+				28F89EED27D1476600CE82B7 /* Tabs.swift in Sources */,
 				28A8FDE327CE879A001F1100 /* Color.swift in Sources */,
 				28F89EE727D1182700CE82B7 /* CustomCornerRadiusPath.swift in Sources */,
+				28F89EF627D1498500CE82B7 /* CompletionHandler.swift in Sources */,
 				28A8FDC827CE7442001F1100 /* CoinRadarApp.swift in Sources */,
 				28F89EE427D1174100CE82B7 /* TabBarView.swift in Sources */,
+				28F89EF327D1486B00CE82B7 /* StatButton.swift in Sources */,
 				28A8FDDE27CE8543001F1100 /* LunchView.swift in Sources */,
 				28A8FDE727CE87DB001F1100 /* AppColor.swift in Sources */,
 			);

@@ -9,19 +9,17 @@ import SwiftUI
 
 struct TabBarView: View {
     
-    @State var pressed = false
+    @State private var selectedTab = Tabs.stat
+    
+    //MARK: - MainBody
     var body: some View {
-        VStack{
-            Spacer()
+        ZStack{
             
-            ZStack{
-                
-                background
-                
-                tabs
-            }
-        }
-        .ignoresSafeArea()
+            background
+            
+            tabs
+        }.frame(maxWidth: .infinity)
+            .ignoresSafeArea()
         
     }
 }
@@ -45,51 +43,21 @@ extension TabBarView{
            
             Spacer()
             
-            Button(action: {
-                pressed.toggle()
-            }){
-                if pressed{
-                    HStack(spacing: 0){
-                        Text(".")
-                            .foregroundColor(Color.primaries.first.rawValue.associatedColor)
-                        
-                        Text(".")
-                            .foregroundColor(Color.primaries.second.rawValue.associatedColor)
-                        
-                        Text(".")
-                            .foregroundColor(Color.primaries.third.rawValue.associatedColor)
-                    }
-                        .font(.system(size: 55))
-                        .offset(y: -15)
-                }else {
-                    HStack(spacing: 0){
-                        Text(".")
-                            .foregroundColor(Color(hex: "818589"))
-                        
-                        Text(".")
-                            .foregroundColor(Color(hex: "C0C0C0"))
-                        
-                        Text(".")
-                            .foregroundColor(Color(hex:"D3D3D3"))
-                    }
-                        .font(.system(size: 55))
-                        .offset(y: -15)
-                }
+            StatButton(selectedTab: $selectedTab) {
+                print("Stat button is pressed")
             }
-            
             
             Spacer()
             
-            ZStack{
-
+            PortfolioButton(selectedTab: $selectedTab) {
+                print("Portfolio button is pressed")
             }
-            
-            
-           
             
             Spacer()
                 
-            
+            SettingButton(selectedTab: $selectedTab) {
+                print("Setting button is presss")
+            }
                 
             Spacer()
             
