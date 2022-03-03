@@ -14,6 +14,10 @@ extension View{
         modifier(FrameViewModifier(size: size, alignment: alignment))
     }
     
+    public func frame(width: CGFloat, height: CGFloat) -> some View{
+        self.frame(width: width, height: height, alignment: .center)
+    }
+    
     public func cornerRadius(radii: CGFloat, corners: UIRectCorner = .allCorners) -> some View{
         modifier(CustomCornerRadiusViewModifier(radii: radii, corners: corners))
     }

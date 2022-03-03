@@ -17,7 +17,8 @@ enum AppStyle{
         }
         
         enum Secondary: AppColor{
-            case first = "Secondary 1"
+            case first  = "Secondary 1"
+            case second = "Secondary 2"
         }
         
         enum Background: AppColor{

@@ -23,6 +23,7 @@
 		28F89EE427D1174100CE82B7 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE327D1174100CE82B7 /* TabBarView.swift */; };
 		28F89EE727D1182700CE82B7 /* CustomCornerRadiusPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */; };
 		28F89EE927D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE827D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift */; };
+		28F89EEB27D11CF800CE82B7 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EEA27D11CF800CE82B7 /* Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		28F89EE327D1174100CE82B7 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornerRadiusPath.swift; sourceTree = "<group>"; };
 		28F89EE827D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornerRadiusViewModifier.swift; sourceTree = "<group>"; };
+		28F89EEA27D11CF800CE82B7 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				28A8FDE427CE87BB001F1100 /* AppStyle.swift */,
 				28A8FDE827CE93E0001F1100 /* Assets.swift */,
+				28F89EEA27D11CF800CE82B7 /* Device.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				28F89EE927D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift in Sources */,
 				28A8FDCA27CE7442001F1100 /* ContentView.swift in Sources */,
 				28A8FDE927CE93E0001F1100 /* Assets.swift in Sources */,
+				28F89EEB27D11CF800CE82B7 /* Device.swift in Sources */,
 				28A8FDE527CE87BB001F1100 /* AppStyle.swift in Sources */,
 				28A8FDF127CE9BB3001F1100 /* LunchViewModel.swift in Sources */,
 				28A8FDE327CE879A001F1100 /* Color.swift in Sources */,
