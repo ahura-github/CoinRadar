@@ -9,7 +9,7 @@ import struct SwiftUI.CGFloat
 import protocol SwiftUI.View
 import protocol SwiftUI.ViewModifier
 
-struct Frame: ViewModifier{
+struct FrameViewModifier: ViewModifier{
     
     let size: CGFloat
     let alignment: Alignment

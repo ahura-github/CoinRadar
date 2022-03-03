@@ -18,8 +18,11 @@
 		28A8FDE727CE87DB001F1100 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FDE627CE87DB001F1100 /* AppColor.swift */; };
 		28A8FDE927CE93E0001F1100 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FDE827CE93E0001F1100 /* Assets.swift */; };
 		28A8FDEB27CE9507001F1100 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FDEA27CE9507001F1100 /* View.swift */; };
-		28A8FDEE27CE9566001F1100 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FDED27CE9566001F1100 /* Frame.swift */; };
+		28A8FDEE27CE9566001F1100 /* FrameViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FDED27CE9566001F1100 /* FrameViewModifier.swift */; };
 		28A8FDF127CE9BB3001F1100 /* LunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A8FDF027CE9BB3001F1100 /* LunchViewModel.swift */; };
+		28F89EE427D1174100CE82B7 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE327D1174100CE82B7 /* TabBarView.swift */; };
+		28F89EE727D1182700CE82B7 /* CustomCornerRadiusPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */; };
+		28F89EE927D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F89EE827D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,11 @@
 		28A8FDE627CE87DB001F1100 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		28A8FDE827CE93E0001F1100 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		28A8FDEA27CE9507001F1100 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		28A8FDED27CE9566001F1100 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		28A8FDED27CE9566001F1100 /* FrameViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameViewModifier.swift; sourceTree = "<group>"; };
 		28A8FDF027CE9BB3001F1100 /* LunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewModel.swift; sourceTree = "<group>"; };
+		28F89EE327D1174100CE82B7 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornerRadiusPath.swift; sourceTree = "<group>"; };
+		28F89EE827D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornerRadiusViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		28A8FDD527CE744C001F1100 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				28F89EE527D1180B00CE82B7 /* Shapes */,
 				28A8FDEC27CE9557001F1100 /* ViewModifiers */,
 				28A8FDE027CE877F001F1100 /* Structs */,
 				28A8FDDF27CE8779001F1100 /* Enums */,
@@ -125,8 +132,9 @@
 		28A8FDD927CE7462001F1100 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				28A8FDDA27CE8224001F1100 /* LunchScreen */,
 				28A8FDC927CE7442001F1100 /* ContentView.swift */,
+				28A8FDDA27CE8224001F1100 /* LunchScreen */,
+				28F89EE227D116C900CE82B7 /* Navigation */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,7 +177,8 @@
 		28A8FDEC27CE9557001F1100 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				28A8FDED27CE9566001F1100 /* Frame.swift */,
+				28A8FDED27CE9566001F1100 /* FrameViewModifier.swift */,
+				28F89EE827D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -180,6 +189,22 @@
 				28A8FDF027CE9BB3001F1100 /* LunchViewModel.swift */,
 			);
 			path = LunchScreen;
+			sourceTree = "<group>";
+		};
+		28F89EE227D116C900CE82B7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				28F89EE327D1174100CE82B7 /* TabBarView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		28F89EE527D1180B00CE82B7 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				28F89EE627D1182700CE82B7 /* CustomCornerRadiusPath.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,14 +278,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A8FDEE27CE9566001F1100 /* Frame.swift in Sources */,
+				28A8FDEE27CE9566001F1100 /* FrameViewModifier.swift in Sources */,
 				28A8FDEB27CE9507001F1100 /* View.swift in Sources */,
+				28F89EE927D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift in Sources */,
 				28A8FDCA27CE7442001F1100 /* ContentView.swift in Sources */,
 				28A8FDE927CE93E0001F1100 /* Assets.swift in Sources */,
 				28A8FDE527CE87BB001F1100 /* AppStyle.swift in Sources */,
 				28A8FDF127CE9BB3001F1100 /* LunchViewModel.swift in Sources */,
 				28A8FDE327CE879A001F1100 /* Color.swift in Sources */,
+				28F89EE727D1182700CE82B7 /* CustomCornerRadiusPath.swift in Sources */,
 				28A8FDC827CE7442001F1100 /* CoinRadarApp.swift in Sources */,
+				28F89EE427D1174100CE82B7 /* TabBarView.swift in Sources */,
 				28A8FDDE27CE8543001F1100 /* LunchView.swift in Sources */,
 				28A8FDE727CE87DB001F1100 /* AppColor.swift in Sources */,
 			);
