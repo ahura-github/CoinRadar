@@ -8,3 +8,4 @@
 import Foundation
 
 typealias CompletionHandler = () -> ()
+typealias iconAssets        = Assets.Images.Icons

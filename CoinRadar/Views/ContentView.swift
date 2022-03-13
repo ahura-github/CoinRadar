@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selectedTab = Tabs.stat
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            
+            if selectedTab == .stat{
+                MainView()
+            }
+            
+            if selectedTab == .portfolio{
+                PortfolioView()
+            }
+            
+            if selectedTab == .setting{
+                SettingView()
+            }
+            
+            Spacer(minLength: 0)
+            
+            TabBarView(selectedTab: $selectedTab)
+        }
     }
 }
 

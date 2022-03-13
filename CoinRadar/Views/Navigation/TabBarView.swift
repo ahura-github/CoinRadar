@@ -9,12 +9,11 @@ import SwiftUI
 
 struct TabBarView: View {
     
-    @State private var selectedTab = Tabs.stat
+    @Binding var selectedTab: Tabs
     
     //MARK: - MainBody
     var body: some View {
         ZStack{
-            
             background
             
             tabs
@@ -26,7 +25,7 @@ struct TabBarView: View {
 
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        TabBarView(selectedTab: .constant(.portfolio))
     }
 }
 
