@@ -9,7 +9,7 @@ import SwiftUI
 
 
 extension View{
-    
+        
     public func frame(size: CGFloat, alignment: Alignment = .center) -> some View{
         modifier(FrameViewModifier(size: size, alignment: alignment))
     }

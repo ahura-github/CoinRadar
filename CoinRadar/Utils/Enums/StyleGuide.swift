@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AppStyle{
+enum StyleGuide{
     enum Colors{
         enum Primary: AppColor{
             case first  = "Primary 1"
@@ -19,10 +19,13 @@ enum AppStyle{
         enum Secondary: AppColor{
             case first  = "Secondary 1"
             case second = "Secondary 2"
+            case third  = "Secondary 3"
+            case fourth = "Secondary 4"
         }
         
         enum Background: AppColor{
-            case first = "Background"
+            case first  = "Background"
+            case second = "Backrgound 2"
         }
     }
     

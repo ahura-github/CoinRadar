@@ -8,9 +8,9 @@
 import SwiftUI
 
 extension Color{
-    typealias background  = AppStyle.Colors.Background
-    typealias primaries   = AppStyle.Colors.Primary
-    typealias secondaries = AppStyle.Colors.Secondary
+    typealias background  = StyleGuide.Colors.Background
+    typealias primaries   = StyleGuide.Colors.Primary
+    typealias secondaries = StyleGuide.Colors.Secondary
     
     init(hex: String) {
             let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

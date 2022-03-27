@@ -51,7 +51,7 @@ extension CustomSearchbar{
             .padding()
     }
     private var microphoneButton: some View {
-        Image(iconAssets.microphone.rawValue)
+        Image(Image.IconAssets.microphone.rawValue)
             .resizable()
             .scaledToFit()
             .frame(size: 35)

@@ -32,7 +32,7 @@ struct TabBarView_Previews: PreviewProvider {
 extension TabBarView{
     private var background: some View {
         Rectangle()
-            .frame(width: deviceSize.width, height: 125)
+            .frame(width: ScreenSize.width, height: 125)
             .cornerRadius(radii: 50, corners: [.topLeft, .topRight])
             .foregroundColor(Color.secondaries.second.rawValue.associatedColor)
             .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: -10)

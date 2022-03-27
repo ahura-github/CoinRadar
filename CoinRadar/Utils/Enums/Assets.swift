@@ -20,6 +20,11 @@ enum Assets{
             case selectedPortfolio   = "wallet"
             case unselectedPortfolio = "walletGray"
         }
+        
+        enum Info: String {
+            case developerPic  = "developer"
+            case coingeckoLogo = "coingecko"
+        }
     }
 }
 

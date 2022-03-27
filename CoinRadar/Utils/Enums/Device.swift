@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-typealias deviceSize = Device.Size
 
 enum Device{
-    enum Size{
-        static let width  = UIScreen.main.bounds.width
-        static let height = UIScreen.main.bounds.height
+    enum Screen{
+        enum Size{
+            static let width  = UIScreen.main.bounds.width
+            static let height = UIScreen.main.bounds.height
+        }
     }
 }
