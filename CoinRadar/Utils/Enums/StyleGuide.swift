@@ -27,6 +27,11 @@ enum StyleGuide{
             case first  = "Background"
             case second = "Backrgound 2"
         }
+        
+        enum Stat: AppColor{
+            case increasing = "Increase"
+            case decreasing = "Decrease"
+        }
     }
     
     

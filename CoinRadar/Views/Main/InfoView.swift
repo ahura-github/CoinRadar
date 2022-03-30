@@ -11,7 +11,7 @@ struct InfoView: View {
     var body: some View {
         
         
-        ZStack(alignment: .center) {
+        ZStack(alignment: ScreenSize.width > 375.0 ? . center : .bottom) {
             ///My Info
             HStack{
                 VStack{
@@ -35,11 +35,12 @@ struct InfoView: View {
                        name
                        title
                    }
-                   HStack{
+                   HStack(spacing: ScreenSize.width > 375.0 ? 20 : nil){
                        linkedin
+                       
                        instagram
                    }
-                   .padding(.trailing, 5)
+                   .font(.system(size: 13))
                    .padding(.top, 25)
                     
                    
@@ -50,7 +51,8 @@ struct InfoView: View {
                        
                     Spacer()
                 }
-                .frame(width: 2 * (ScreenSize.width / 3) - 35)
+               .padding(.trailing, 15)
+               .frame(width: 2 * (ScreenSize.width / 3) - 35)
                 
                
             }
@@ -77,13 +79,17 @@ struct InfoView: View {
                 
             }
         }
-        
+        .padding(.top, 40)
     }
 }
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView()
+        Group {
+            InfoView()
+            InfoView()
+                .previewDevice("iPhone 13 Pro Max")
+        }
     }
 }
 
@@ -163,7 +169,7 @@ extension InfoView{
     }
     private var apiPage:      some View {
         Button(action: {}){
-            Text("Api Page")
+            Text("API Page")
                 .fontWeight(.medium)
                 .foregroundColor(.white.opacity(0.8))
                 .padding()

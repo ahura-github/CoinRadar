@@ -27,7 +27,9 @@ struct CustomSearchbar: View {
                 microphoneButton
             }
         }
-        .frame(width: 300, height: 50)
+        .frame(width: 3 * (ScreenSize.width / 4) - 25, height: 50)
+        .padding(.horizontal)
+        
     }
 }
 

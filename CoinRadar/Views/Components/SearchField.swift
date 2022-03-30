@@ -32,6 +32,10 @@ struct SearchField: UIViewRepresentable{
         textField.placeholder = placeHolder
         textField.delegate    = context.coordinator
         
+        textField.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        textField.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+        
+        
         return textField
     }
     

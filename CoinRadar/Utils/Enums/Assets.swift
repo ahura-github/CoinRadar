@@ -11,8 +11,9 @@ import Foundation
 enum Assets{
     enum Images{
         enum Icons: String{
-            case logo       = "logo"
-            case microphone = "microphone"
+            case logo           = "logo"
+            case microphone     = "microphone"
+            case icreasingArrow = "increaseArrow"
         }
         enum Tab: String{
             case selectedStats       = "bitcoin"

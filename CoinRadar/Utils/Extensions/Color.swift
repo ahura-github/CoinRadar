@@ -11,6 +11,7 @@ extension Color{
     typealias background  = StyleGuide.Colors.Background
     typealias primaries   = StyleGuide.Colors.Primary
     typealias secondaries = StyleGuide.Colors.Secondary
+    typealias stats       = StyleGuide.Colors.Stat
     
     init(hex: String) {
             let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
