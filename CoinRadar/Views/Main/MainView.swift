@@ -30,7 +30,10 @@ struct MainView: View {
             }
             .padding(.horizontal, 25)
             
+      
             StatisticScrollView(stats: DeveloperPreview.instance.stats)
+            
+            TopBarModesView()
             
             Spacer()
                 .navigationBarHidden(true)
@@ -45,8 +48,14 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MainView()
-            MainView()
-                .previewDevice("iPhone 13 Pro Max")
+                .previewDevice("iPhone 13 mini")
+//            MainView()
+//                .previewDevice("iPhone 8 Plus")
+
+//            MainView()
+//                .previewDevice("iPhone 8")
+//            MainView()
+//                .previewDevice("iPhone 13 Pro Max")
         }
     }
 }

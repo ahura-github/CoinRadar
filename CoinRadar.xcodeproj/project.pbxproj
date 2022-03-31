@@ -15,6 +15,9 @@
 		28198F6E27F0B0ED00FBF2A3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28198F6D27F0B0ED00FBF2A3 /* Image.swift */; };
 		28198F7027F0B2E200FBF2A3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28198F6F27F0B2E200FBF2A3 /* Globals.swift */; };
 		28198F7327F0C54600FBF2A3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28198F7227F0C54600FBF2A3 /* MainViewModel.swift */; };
+		2849BAB727F5D92400866B1E /* Modes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849BAB627F5D92400866B1E /* Modes.swift */; };
+		2849BABA27F5D9CF00866B1E /* TopBarModesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849BAB927F5D9CF00866B1E /* TopBarModesView.swift */; };
+		2849BABC27F5DED300866B1E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849BABB27F5DED300866B1E /* Keys.swift */; };
 		2850A81027F4B71F00CC8DC8 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850A80F27F4B71F00CC8DC8 /* StatisticCell.swift */; };
 		2850A81227F4B72D00CC8DC8 /* StatisticScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850A81127F4B72D00CC8DC8 /* StatisticScrollView.swift */; };
 		2850A81527F4BB3200CC8DC8 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2850A81427F4BB3200CC8DC8 /* DeveloperPreview.swift */; };
@@ -58,6 +61,9 @@
 		28198F6D27F0B0ED00FBF2A3 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		28198F6F27F0B2E200FBF2A3 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		28198F7227F0C54600FBF2A3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2849BAB627F5D92400866B1E /* Modes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modes.swift; sourceTree = "<group>"; };
+		2849BAB927F5D9CF00866B1E /* TopBarModesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarModesView.swift; sourceTree = "<group>"; };
+		2849BABB27F5DED300866B1E /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		2850A80F27F4B71F00CC8DC8 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
 		2850A81127F4B72D00CC8DC8 /* StatisticScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticScrollView.swift; sourceTree = "<group>"; };
 		2850A81427F4BB3200CC8DC8 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
@@ -120,6 +126,14 @@
 				28198F7227F0C54600FBF2A3 /* MainViewModel.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		2849BAB827F5D9A200866B1E /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				2850A80F27F4B71F00CC8DC8 /* StatisticCell.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		2850A81327F4BB1800CC8DC8 /* Singletons */ = {
@@ -217,6 +231,7 @@
 				28F89EFA27D14F5C00CE82B7 /* Main */,
 				28F89EFB27D14F7300CE82B7 /* Portfolio */,
 				28F89EFC27D14F7900CE82B7 /* Setting */,
+				2849BAB827F5D9A200866B1E /* Items */,
 				28178AF927DE3B36006BDE4F /* Components */,
 			);
 			path = Views;
@@ -238,6 +253,8 @@
 				28A8FDE827CE93E0001F1100 /* Assets.swift */,
 				28F89EEA27D11CF800CE82B7 /* Device.swift */,
 				28F89EEC27D1476600CE82B7 /* Tabs.swift */,
+				2849BAB627F5D92400866B1E /* Modes.swift */,
+				2849BABB27F5DED300866B1E /* Keys.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -321,8 +338,8 @@
 			children = (
 				28F89EFD27D14FB400CE82B7 /* MainView.swift */,
 				28198F6B27F0AE4900FBF2A3 /* InfoView.swift */,
-				2850A80F27F4B71F00CC8DC8 /* StatisticCell.swift */,
 				2850A81127F4B72D00CC8DC8 /* StatisticScrollView.swift */,
+				2849BAB927F5D9CF00866B1E /* TopBarModesView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -423,6 +440,7 @@
 				28F89F0227D14FC800CE82B7 /* SettingView.swift in Sources */,
 				28178AFF27DE5D5C006BDE4F /* CircleButton.swift in Sources */,
 				28F89EE927D1199200CE82B7 /* CustomCornerRadiusViewModifier.swift in Sources */,
+				2849BABC27F5DED300866B1E /* Keys.swift in Sources */,
 				28198F7027F0B2E200FBF2A3 /* Globals.swift in Sources */,
 				28178AFB27DE3B4D006BDE4F /* CustomSearchbar.swift in Sources */,
 				28F89EF927D14A3C00CE82B7 /* CustomButton.swift in Sources */,
@@ -439,6 +457,7 @@
 				28F89EED27D1476600CE82B7 /* Tabs.swift in Sources */,
 				28A8FDE327CE879A001F1100 /* Color.swift in Sources */,
 				2850A81227F4B72D00CC8DC8 /* StatisticScrollView.swift in Sources */,
+				2849BABA27F5D9CF00866B1E /* TopBarModesView.swift in Sources */,
 				28F89EE727D1182700CE82B7 /* CustomCornerRadiusPath.swift in Sources */,
 				28198F6C27F0AE4900FBF2A3 /* InfoView.swift in Sources */,
 				28F89EF627D1498500CE82B7 /* CompletionHandler.swift in Sources */,
@@ -446,6 +465,7 @@
 				28F89EE427D1174100CE82B7 /* TabBarView.swift in Sources */,
 				28F89EF327D1486B00CE82B7 /* StatButton.swift in Sources */,
 				2850A81727F4BDA400CC8DC8 /* String.swift in Sources */,
+				2849BAB727F5D92400866B1E /* Modes.swift in Sources */,
 				28F89F0027D14FBE00CE82B7 /* PortfolioView.swift in Sources */,
 				28A8FDDE27CE8543001F1100 /* LunchView.swift in Sources */,
 				288C98FE27F21F9C00078701 /* PreviewProvider.swift in Sources */,

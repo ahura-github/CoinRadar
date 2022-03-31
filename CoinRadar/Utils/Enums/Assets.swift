@@ -14,6 +14,7 @@ enum Assets{
             case logo           = "logo"
             case microphone     = "microphone"
             case icreasingArrow = "increaseArrow"
+            case dollar         = "dollar"
         }
         enum Tab: String{
             case selectedStats       = "bitcoin"

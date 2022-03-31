@@ -23,8 +23,9 @@ struct StatisticCell: View {
                     .font(.headline)
                 
                 
-                
-                StatTrend(percentageChange: stat.percentageChange ?? 0)
+                if let percentChange = stat.percentageChange {
+                    StatTrend(percentageChange: percentChange)
+                }
             }
         }
         .padding(15)
@@ -76,7 +77,10 @@ struct StatTrend: View {
                 .bold()
         }
         .foregroundColor(trendIsIncreasing ? Color.stats.increasing.rawValue.associatedColor : Color.stats.decreasing.rawValue.associatedColor)
+        //.padding(8)
+        .frame(width: 80)
         .padding(5)
+        //.padding(.horizontal, 5)
         .background(trendIsIncreasing ? Color.stats.increasing.rawValue.associatedColor.opacity(0.2) : Color.stats.decreasing.rawValue.associatedColor.opacity(0.2))
         .cornerRadius(5)
         
